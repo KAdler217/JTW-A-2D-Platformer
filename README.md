@@ -1,8 +1,10 @@
 # JTW · 2D 平台跳跃游戏
 
+![JTW · 2D 平台跳跃游戏](docs/images/banner.png)
+
 一个用 Unity 制作的 2D 横版平台跳跃小游戏：**3 个风格各异的关卡 + 关卡选择枢纽 + 金币商店**。玩家在关卡中跳跃、战斗、收集金币，金币跨关卡累积，可用来购买狙击枪。
 
-> 课程作业项目（JTW / hw3）。完整的设计思路、实现细节与踩坑记录见 [作业报告](<素材及最终/JTW 2D平台跳跃游戏作业报告.md>)。
+> 课程作业项目（JTW / hw3）。完整的设计思路与踩坑记录见 [设计报告](<素材及最终/JTW 2D平台跳跃游戏作业报告.md>)。
 
 | 项目信息 | 值 |
 | --- | --- |
@@ -21,7 +23,27 @@
 - **商店**：在关卡选择界面花 **20** 金币购买**狙击枪**，购买后可在任意关卡使用。
 - **关卡自由顺序**：三个关卡可通过枢纽界面的传送门自由选择，可反复游玩刷金币。
 
+## 预览
+
+### 关卡
+
+![三个关卡](docs/images/scenes.png)
+
+### 角色 / 敌人 / 道具
+
+![角色与敌人与道具](docs/images/sprites.png)
+
+### 序列帧动画
+
+以下动画由项目内的 Sprite Sheet **直接导出**（非游戏录屏），用于展示美术资源的原始帧序列：
+
+| 金币旋转 | 蝙蝠扇翅 | 幽灵尖啸 |
+| :---: | :---: | :---: |
+| ![金币旋转](docs/images/demo-coin.gif) | ![蝙蝠扇翅](docs/images/demo-bat.gif) | ![幽灵尖啸](docs/images/demo-ghost.gif) |
+
 ## 场景与流程
+
+![场景流程](docs/images/flow.png)
 
 | 场景 | 构建索引 | 作用 |
 | --- | --- | --- |
@@ -112,7 +134,8 @@ Assets/
 ├── Animation/              动画与 Animator Controller
 ├── Resources/              音效（拾取、受击、攻击、跳跃、回血、射击）
 └── Material/               材质
-素材及最终/                  作业报告与美术素材
+docs/images/                README 配图与动画
+素材及最终/                  设计报告与美术素材
 hw3.sln / Assembly-CSharp.csproj   生成的解决方案与工程文件
 hw3.unitypackage            Unity 导出包
 ```
@@ -143,6 +166,7 @@ hw3.unitypackage            Unity 导出包
 - `Assets/Resourcrs/` 目录名为拼写遗留（与 `Resources/` 并存），仅含空文件夹。
 - 无设置菜单（音量/分辨率）、无存档界面，金币存档依赖 `PlayerPrefs`。
 - 仅在 Windows 平台测试，未验证其他平台。
+- README 配图由项目内美术资源合成，**非游戏实际截图**。
 
 ## 素材与参考
 
@@ -161,6 +185,6 @@ hw3.unitypackage            Unity 导出包
 
 ## 作者
 
-高治铭 · [@KAdler217](https://github.com/KAdler217)
+[@KAdler217](https://github.com/KAdler217)
 
 本项目为课程作业，未附带开源许可证；素材版权归各自原作者所有。
