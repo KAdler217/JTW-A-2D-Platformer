@@ -43,6 +43,8 @@
 
 ![实机演示](docs/images/demo-gameplay.gif)
 
+完整演示视频（98 秒，28.9 MB）：[hw3-demo.mp4](docs/demo/hw3-demo.mp4)
+
 ### 素材图鉴
 
 ![角色与敌人与道具](docs/images/sprites.png)
@@ -141,6 +143,7 @@ Assets/
 ├── Resources/              音效（拾取、受击、攻击、跳跃、回血、射击）
 └── Material/               材质
 docs/images/                README 配图与动画
+docs/demo/                  实机演示视频（98 秒）
 素材及最终/                  设计报告与美术素材
 hw3.sln / Assembly-CSharp.csproj   生成的解决方案与工程文件
 hw3.unitypackage            Unity 导出包
