@@ -25,21 +25,27 @@
 
 ## 预览
 
-### 关卡
+> 以下画面全部截取自本项目的实机演示视频，非效果图。
 
-![三个关卡](docs/images/scenes.png)
+### 实机画面
 
-### 角色 / 敌人 / 道具
+![主菜单](docs/images/screenshot-menu.png)
+
+| ![关卡选择](docs/images/screenshot-hub.png) | ![地牢关卡](docs/images/screenshot-dark.png) |
+| :---: | :---: |
+| **Level**：关卡选择枢纽，三个传送门与商店入口 | **Dark_scene**：城堡内部，幽灵与火焰道具 |
+| ![地下与草地](docs/images/screenshot-bright.png) | ![天空奖励关](docs/images/screenshot-reward.png) |
+| **Bright_scene**：地下与草地，兽形敌人与地刺 | **Reward**：天空关卡，蝙蝠与金币 |
+
+### 实机演示
+
+击杀蝙蝠、掉血、拾取金币的连续画面：
+
+![实机演示](docs/images/demo-gameplay.gif)
+
+### 素材图鉴
 
 ![角色与敌人与道具](docs/images/sprites.png)
-
-### 序列帧动画
-
-以下动画由项目内的 Sprite Sheet **直接导出**（非游戏录屏），用于展示美术资源的原始帧序列：
-
-| 金币旋转 | 蝙蝠扇翅 | 幽灵尖啸 |
-| :---: | :---: | :---: |
-| ![金币旋转](docs/images/demo-coin.gif) | ![蝙蝠扇翅](docs/images/demo-bat.gif) | ![幽灵尖啸](docs/images/demo-ghost.gif) |
 
 ## 场景与流程
 
@@ -166,7 +172,7 @@ hw3.unitypackage            Unity 导出包
 - `Assets/Resourcrs/` 目录名为拼写遗留（与 `Resources/` 并存），仅含空文件夹。
 - 无设置菜单（音量/分辨率）、无存档界面，金币存档依赖 `PlayerPrefs`。
 - 仅在 Windows 平台测试，未验证其他平台。
-- README 配图由项目内美术资源合成，**非游戏实际截图**。
+- README 中的实机画面截取自 852×480 的演示视频，非高分辨率录制。
 
 ## 素材与参考
 

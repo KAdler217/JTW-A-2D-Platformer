@@ -1,7 +1,6 @@
 ### JTW 2D平台跳跃游戏作业报告
 
-高治铭 521021910056
-
+作者：KAdler217
 ##### 1.玩法改动
 
 原来的玩法设计过于依赖美术资源，重在通过roguelike机制设计给玩家提供乐趣，但是本游戏体量较小，关卡数较少，无法展现出机制改变对游戏本身的增益，所以最终作品重点在关卡内的游戏设计；
@@ -50,7 +49,7 @@ void FlashColor(float time)
 Instantiate(bloodEffect, transform.position, Quaternion.identity);
 ```
 
-<img src="C:\Users\26439\AppData\Roaming\Typora\typora-user-images\image-20240326231631390.png" alt="image-20240326231631390" style="zoom:50%;" />
+<img src="docs/images/report/image-20240326231631390.png" alt="image-20240326231631390" style="zoom:50%;" />
 
 （2）Demon Bat and Ghost
 
@@ -68,7 +67,7 @@ Vector2 GetRandomPos()
 
 
 
-![image-20240326221544135](C:\Users\26439\AppData\Roaming\Typora\typora-user-images\image-20240326221544135.png)
+![image-20240326221544135](docs/images/report/image-20240326221544135.png)
 
 ```
 transform.position = Vector2.MoveTowards(transform.position, movePos.position, speed * Time.deltaTime);
@@ -96,13 +95,13 @@ Instantiate(coin, transform.position, Quaternion.identity);
 
 这个敌人设计为守护金币的敌人，玩家一旦拾取Beast下方的Coin,会触发Beast的Burning动画，化成一个火柱，对玩家造成伤害
 
-![image-20240326233836109](C:\Users\26439\AppData\Roaming\Typora\typora-user-images\image-20240326233836109.png)
+![image-20240326233836109](docs/images/report/image-20240326233836109.png)
 
 
 
 ##### 4.道具设计
 
-（1）Coin         ![image-20240326234520505](C:\Users\26439\AppData\Roaming\Typora\typora-user-images\image-20240326234520505.png)
+（1）Coin         ![image-20240326234520505](docs/images/report/image-20240326234520505.png)
 
 Coin设计为金币，会原地转动，Player靠近时会自动拾取，并在左上角的UI中加一，并触发拾取音效，Coin会用来购买狙击枪，Coin被拾取的判断逻辑为检查碰撞体的Tag和碰撞体的类型名字
 
@@ -117,11 +116,11 @@ PlayerPrefs.GetInt("CoinCount")
 PlayerPrefs.SetInt("CoinCount")
 ```
 
-（2）Magic       <img src="C:\Users\26439\AppData\Roaming\Typora\typora-user-images\image-20240326234540786.png" alt="image-20240326234540786" style="zoom:67%;" />
+（2）Magic       <img src="docs/images/report/image-20240326234540786.png" alt="image-20240326234540786" style="zoom:67%;" />
 
 Magic设计为回血，触发回血音效，使玩家恢复一定的数值
 
-（3）Treasure   <img src="C:\Users\26439\AppData\Roaming\Typora\typora-user-images\image-20240326234749505.png" alt="image-20240326234749505" style="zoom:80%;" />
+（3）Treasure   <img src="docs/images/report/image-20240326234749505.png" alt="image-20240326234749505" style="zoom:80%;" />
 
 Treasure设计为宝箱，玩家靠近时宝箱会自动弹开，并掉落三个金币，仍然使用Instantiate函数来实现
 
